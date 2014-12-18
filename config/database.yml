@@ -1,8 +1,13 @@
 # SQLite version 3.x
-#   gem install sqlite3
+# NOPE gem install sqlite3
+# Ensure the SQLite 3 gem is defined in your Gemfile
+# gem 'sqlite3'
+
+# make sure pg (or postgresql?) is the gem used
+# gem install (that gem name, pg or postgresql, dunno what v)
+# gem 'that gem' in gemfile
+# YAML cannot handle tabbing, so get out of the habit
 #
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
 #
 # gandi instance wants postgreSQL
 
@@ -10,8 +15,8 @@ default: &default
   adapter: postgresql
 #  pool: 5
 #  timeout: 5000
-host: localhost
-port: 5432 #your postgresql port no. according to postgres local server thingy
+  host: localhost
+  port: 5432 #your postgresql port no. according to postgres local server thingy
 
 development:
   <<: *default
